@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="charlyOrange" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f24e1e"/>
+      <stop offset="100%" stop-color="#bd340c"/>
+    </linearGradient>
+  </defs>
+  <!-- Fondo Naranja Alto Contraste -->
+  <rect width="400" height="500" fill="url(#charlyOrange)"/>
+
+  <!-- Primer plano expresionista de Charly García / Rock Nacional -->
+  <g fill="#0b0c16">
+    <!-- Pelo revuelto de rockero -->
+    <path d="M 60 180 C 70 80, 160 30, 260 40 C 350 50, 390 120, 370 240 C 390 320, 380 420, 370 500 L 30 500 C 40 420, 30 310, 60 180 Z"/>
+
+    <!-- Zona iluminada del rostro en negativo naranja -->
+    <!-- Frente y pómulos -->
+    <path d="M 120 160 Q 220 130 320 170 Q 340 320 280 380 Q 180 390 130 320 Z" fill="#f24e1e"/>
+
+    <!-- Lentes oscuros icónicos -->
+    <!-- Marco izquierdo -->
+    <path d="M 140 210 Q 190 200 220 220 Q 210 270 150 265 Q 130 240 140 210 Z" fill="#0b0c16"/>
+    <!-- Marco derecho -->
+    <path d="M 235 220 Q 275 200 320 215 Q 320 270 260 270 Q 235 250 235 220 Z" fill="#0b0c16"/>
+    <!-- Puente de los lentes -->
+    <path d="M 215 225 L 240 225" stroke="#0b0c16" stroke-width="8"/>
+    <!-- Patillas -->
+    <path d="M 140 220 L 90 200 M 320 220 L 360 210" stroke="#0b0c16" stroke-width="6"/>
+
+    <!-- Nariz aguileña característica -->
+    <path d="M 230 220 L 235 290 L 210 300 L 230 310" stroke="#0b0c16" stroke-width="8" stroke-linecap="round" fill="none"/>
+
+    <!-- Bigote bicolor / sombra de bigote -->
+    <path d="M 175 320 Q 230 310 285 320 Q 230 345 175 320 Z" fill="#0b0c16"/>
+    <!-- Mitad blanca/clara del bigote -->
+    <path d="M 180 320 Q 225 315 230 328 Q 190 335 180 320 Z" fill="#f24e1e"/>
+
+    <!-- Labios y cigarrillo -->
+    <path d="M 200 350 Q 230 360 260 350" stroke="#0b0c16" stroke-width="6" fill="none"/>
+    <path d="M 240 355 L 290 380" stroke="#ffffff" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="292" cy="381" r="4" fill="#f24e1e"/>
+
+    <!-- Barba candado y sombras de cuello -->
+    <path d="M 190 380 Q 230 420 270 380 Q 240 440 190 380 Z" fill="#0b0c16"/>
+  </g>
+</svg>

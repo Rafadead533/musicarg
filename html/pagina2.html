@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Historia de la Música Argentina - Descubrir</title>
+  <meta name="description" content="Descubrí nuevos talentos y la escena emergente de la música argentina.">
+
+  <!-- Favicon con el logo oficial -->
+  <link rel="icon" type="image/png" href="../imgs/logo.png">
+
+  <!-- Precarga de fuentes locales: evita el "parpadeo" de fuentes al cambiar de pestaña -->
+  <link rel="preload" href="../css/font/BebasNeue-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="../css/font/ClashDisplay-Bold.otf" as="font" type="font/otf" crossorigin>
+  <link rel="preload" href="../css/font/LeagueSpartan-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+  <!-- ========================================================================
+       BARRA DE NAVEGACIÓN
+       ======================================================================== -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="../index.html" class="logo-box" aria-label="Ir al inicio" title="Historia de la Música Argentina">
+        <img src="../imgs/logo_white.png" alt="Logo Música Argentina" class="brand-logo-img">
+      </a>
+
+      <nav aria-label="Navegación principal">
+        <ul class="main-nav" id="main-nav-list">
+          <li><a href="../index.html" class="nav-link-item">INICIO</a></li>
+          <li><a href="pagina1.html" class="nav-link-item">HISTORIA</a></li>
+          <li><a href="pagina2.html" class="nav-link-item active" aria-current="page">DESCUBRIR</a></li>
+          <li><a href="pagina3.html" class="nav-link-item">PLAYLISTS</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-search-wrap">
+        <input type="text" class="header-search-input" placeholder="BUSCAR" aria-label="Buscar artistas o géneros">
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       CARRUSEL DE DESCUBRIMIENTO DE ARTISTAS (FIEL A LA MAQUETA 1)
+       ======================================================================== -->
+  <main class="discover-page-wrapper">
+    <div class="discover-slider-container">
+
+      <!-- Flecha Izquierda (<) -->
+      <button class="discover-arrow prev" id="discover-prev" aria-label="Artista anterior">
+        &#10094;
+      </button>
+
+      <!-- Escenario de las 3 tarjetas de artistas -->
+      <div class="discover-carousel-stage" id="discover-stage">
+
+        <!-- TARJETA IZQUIERDA: LAUTARORL -->
+        <article class="artist-slider-card side" id="card-left"
+          style="background-image: url('../imgs/LautaroRL.png');">
+          <div class="artist-card-overlay"></div>
+          <div class="artist-card-info text-start">
+            <h3 class="artist-side-name" id="left-name">LAUTARORL</h3>
+            <span class="artist-subgenre-badge" id="left-genre">RKT / CUMBIA</span>
+            <p class="artist-bio-text small opacity-75 d-none d-md-block" id="left-bio">Sonidos callejeros que fusionan
+              cumbia de barrio con beats electrónicos.</p>
+          </div>
+        </article>
+
+        <!-- TARJETA CENTRAL DESTACADA: MHTRESUNO (EXACTA A LA MAQUETA) -->
+        <article class="artist-slider-card center-featured" id="card-center"
+          style="background-image: url('../imgs/MhTresUno.png');">
+          <div class="artist-card-overlay"></div>
+          <div class="artist-card-info">
+            <h2 class="artist-name-title" id="center-name">MHTRESUNO</h2>
+            <div class="artist-subgenre-badge" id="center-genre">TRAP / RKT</div>
+            <p class="artist-bio-text" id="center-bio">
+              Con 20 años, MHTRESUNO busca ser la cara del nuevo camino de la escena argentina liderando el rkt/mombow
+              del país.
+            </p>
+          </div>
+        </article>
+
+        <!-- TARJETA DERECHA: RAMMA -->
+        <article class="artist-slider-card side" id="card-right"
+          style="background-image: url('../imgs/Ramma.png');">
+          <div class="artist-card-overlay"></div>
+          <div class="artist-card-info text-end">
+            <h3 class="artist-side-name" id="right-name">RAMMA</h3>
+            <span class="artist-subgenre-badge" id="right-genre">TRAP</span>
+            <p class="artist-bio-text small opacity-75 d-none d-md-block" id="right-bio">Líricas crudas de la nueva ola
+              con melodías oscuras y flow característico.</p>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Flecha Derecha (>) -->
+      <button class="discover-arrow next" id="discover-next" aria-label="Siguiente artista">
+        &#10095;
+      </button>
+
+    </div>
+
+    <!-- CONTROLES MÓVIL para carrusel de artistas (se muestran solo en mobile) -->
+    <div class="discover-mobile-controls" style="display:none; justify-content:center; align-items:center; gap:20px; padding:12px 16px 4px;">
+      <button class="discover-mobile-btn" id="discover-prev-mob" aria-label="Artista anterior"
+        style="background:rgba(242,78,30,0.15); border:1px solid var(--color-naranja); color:var(--color-naranja); width:42px; height:42px; border-radius:50%; font-size:1.3rem; cursor:pointer; display:flex; align-items:center; justify-content:center;">
+        &#10094;
+      </button>
+      <div style="font-family:var(--font-titulos); font-size:0.75rem; letter-spacing:2px; color:rgba(255,255,255,0.4);">ARTISTAS</div>
+      <button class="discover-mobile-btn" id="discover-next-mob" aria-label="Siguiente artista"
+        style="background:rgba(242,78,30,0.15); border:1px solid var(--color-naranja); color:var(--color-naranja); width:42px; height:42px; border-radius:50%; font-size:1.3rem; cursor:pointer; display:flex; align-items:center; justify-content:center;">
+        &#10095;
+      </button>
+    </div>
+
+    <!-- SECCIÓN EXPLORACIÓN COMPLEMENTARIA -->
+    <div class="container-custom mt-5">
+      <div class="section-header text-center mb-4">
+        <span class="badge px-3 py-2 text-uppercase mb-2"
+          style="background: rgba(242,78,30,0.15); color: var(--color-naranja); border: 1px solid var(--color-naranja); letter-spacing: 1.5px;">Tendencias
+          Actuales</span>
+        <h3 class="discover-talent-title">MÁS TALENTOS POR DESCUBRIR</h3>
+        <p class="text-white-50 mx-auto" style="max-width: 650px;">
+          Nuevas voces que están revolucionando los escenarios en vivo, las redes y las plataformas digitales de
+          Argentina.
+        </p>
+      </div>
+
+      <div class="row g-4" id="discover-talent-row">
+        <div class="col-md-4">
+          <div class="p-4 rounded-3 h-100"
+            style="background-color: var(--color-azul-card); border: 1px solid var(--color-azul-borde);">
+            <span class="badge bg-danger mb-2">URBANO / RKT</span>
+            <h4 class="text-white mb-2" style="font-size: 1.8rem;">Callejero Fino</h4>
+            <p class="text-white-50 small">Pionero en llevar el RKT de los monoblocks al Movistar Arena con éxitos
+              masivos.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-4 rounded-3 h-100"
+            style="background-color: var(--color-azul-card); border: 1px solid var(--color-azul-borde);">
+            <span class="badge bg-warning text-dark mb-2">FOLKLORE FUSIÓN</span>
+            <h4 class="text-white mb-2" style="font-size: 1.8rem;">Ahyre</h4>
+            <p class="text-white-50 small">Renovadores de la raíz folclórica salteña con arreglos vocales
+              contemporáneos.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-4 rounded-3 h-100"
+            style="background-color: var(--color-azul-card); border: 1px solid var(--color-azul-borde);">
+            <span class="badge bg-primary mb-2">INDIE / ROCK</span>
+            <h4 class="text-white mb-2" style="font-size: 1.8rem;">El Mató a un Policía Motorizado</h4>
+            <p class="text-white-50 small">El estandarte del rock platense independiente que conquistó Iberoamérica.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ========================================================================
+       BOTTOM NAV BAR FIJA (solo mobile)
+       ======================================================================== -->
+  <nav class="mobile-bottom-nav" aria-label="Navegación móvil">
+    <a href="../index.html" id="mob-inicio" aria-label="Inicio">
+      <i class="bi bi-house-fill"></i>
+      <span>Inicio</span>
+    </a>
+    <a href="pagina1.html" id="mob-historia" aria-label="Historia">
+      <i class="bi bi-book"></i>
+      <span>Historia</span>
+    </a>
+    <a href="pagina2.html" class="active" id="mob-descubrir" aria-label="Descubrir">
+      <i class="bi bi-compass"></i>
+      <span>Descubrir</span>
+    </a>
+    <a href="pagina3.html" id="mob-playlists" aria-label="Playlists">
+      <i class="bi bi-collection-play"></i>
+      <span>Playlists</span>
+    </a>
+  </nav>
+
+  <footer class="site-footer">
+    <div class="container-custom">
+      <div class="d-flex flex-wrap justify-content-between align-items-center pb-4 border-bottom border-secondary border-opacity-25 gap-3">
+        <div class="d-flex align-items-center gap-3">
+          <div class="logo-box" style="width: 44px; height: 38px; padding: 5px;">
+            <img src="../imgs/logo_white.png" alt="Logo Música Argentina" class="brand-logo-img" style="max-height: 28px;">
+          </div>
+          <div>
+            <h4 class="m-0 text-white" style="font-size: 1.5rem;">MÚSICA ARGENTINA</h4>
+            <small class="text-white-50">Historia, cultura y diversidad sonora</small>
+          </div>
+        </div>
+
+        <ul class="d-flex gap-4 list-unstyled m-0 p-0">
+          <li><a href="../index.html" class="text-white">INICIO</a></li>
+          <li><a href="pagina1.html" class="text-white">HISTORIA</a></li>
+          <li><a href="pagina2.html" class="text-white">DESCUBRIR</a></li>
+          <li><a href="pagina3.html" class="text-white">PLAYLISTS</a></li>
+        </ul>
+      </div>
+
+      <div class="d-flex flex-wrap justify-content-between align-items-center pt-3 text-white-50 small">
+        <div>&copy; 2026 Historia de la Música Argentina. Todos los derechos reservados.</div>
+        <div class="d-flex gap-3 fs-5">
+          <a href="#" class="text-white-50"><i class="bi bi-spotify"></i></a>
+          <a href="#" class="text-white-50"><i class="bi bi-youtube"></i></a>
+          <a href="#" class="text-white-50"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+      /* ── Datos de artistas para el carrusel principal ── */
+      const artists = [
+        { name: "MHTRESUNO", genre: "TRAP / RKT", bio: "Con 20 años, MHTRESUNO busca ser la cara del nuevo camino de la escena argentina liderando el rkt/mombow del país.", image: "../imgs/MhTresUno.png" },
+        { name: "RAMMA",     genre: "TRAP",       bio: "Líricas crudas de la nueva ola con melodías oscuras y flow característico.", image: "../imgs/Ramma.png" },
+        { name: "LAUTARORL", genre: "RKT / CUMBIA",bio: "Sonidos callejeros que fusionan cumbia de barrio con beats electrónicos.", image: "../imgs/LautaroRL.png" },
+      ];
+
+      let currentIndex = 0;
+      const cardLeft   = document.getElementById('card-left');
+      const cardCenter = document.getElementById('card-center');
+      const cardRight  = document.getElementById('card-right');
+      const prevBtn    = document.getElementById('discover-prev');
+      const nextBtn    = document.getElementById('discover-next');
+      const prevMobBtn = document.getElementById('discover-prev-mob');
+      const nextMobBtn = document.getElementById('discover-next-mob');
+      const mobileCtrl = document.querySelector('.discover-mobile-controls');
+
+      /* Mostrar controles circulares solo en mobile */
+      function checkMobile() {
+        const mob = window.innerWidth <= 768;
+        if (mobileCtrl) mobileCtrl.style.display = mob ? 'flex' : 'none';
+      }
+      checkMobile();
+      let cmTimer;
+      window.addEventListener('resize', () => {
+        clearTimeout(cmTimer);
+        cmTimer = setTimeout(checkMobile, 150);
+      });
+
+      function renderArtists() {
+        const total = artists.length;
+        const leftArt   = artists[(currentIndex - 1 + total) % total];
+        const centerArt = artists[currentIndex];
+        const rightArt  = artists[(currentIndex + 1) % total];
+
+        cardCenter.style.backgroundImage = `url('${centerArt.image}')`;
+        document.getElementById('center-name').textContent  = centerArt.name;
+        document.getElementById('center-genre').textContent = centerArt.genre;
+        document.getElementById('center-bio').textContent   = centerArt.bio;
+
+        cardLeft.style.backgroundImage = `url('${leftArt.image}')`;
+        document.getElementById('left-name').textContent  = leftArt.name;
+        document.getElementById('left-genre').textContent = leftArt.genre;
+        document.getElementById('left-bio').textContent   = leftArt.bio;
+
+        cardRight.style.backgroundImage = `url('${rightArt.image}')`;
+        document.getElementById('right-name').textContent  = rightArt.name;
+        document.getElementById('right-genre').textContent = rightArt.genre;
+        document.getElementById('right-bio').textContent   = rightArt.bio;
+      }
+
+      function goNext() { currentIndex = (currentIndex + 1) % artists.length; renderArtists(); }
+      function goPrev() { currentIndex = (currentIndex - 1 + artists.length) % artists.length; renderArtists(); }
+
+      if (nextBtn) nextBtn.addEventListener('click', goNext);
+      if (prevBtn) prevBtn.addEventListener('click', goPrev);
+      if (nextMobBtn) nextMobBtn.addEventListener('click', goNext);
+      if (prevMobBtn) prevMobBtn.addEventListener('click', goPrev);
+      if (cardLeft)  cardLeft.addEventListener('click', goPrev);
+      if (cardRight) cardRight.addEventListener('click', goNext);
+
+      /* Swipe táctil */
+      let txStart = 0;
+      if (cardCenter) {
+        cardCenter.addEventListener('touchstart', e => { txStart = e.changedTouches[0].clientX; }, { passive: true });
+        cardCenter.addEventListener('touchend',   e => {
+          const dx = e.changedTouches[0].clientX - txStart;
+          if (Math.abs(dx) > 40) dx < 0 ? goNext() : goPrev();
+        }, { passive: true });
+      }
+
+      renderArtists();
+
+      /* ── Carrusel mobile de "más talentos" ── */
+      let talentIndex = 0; // se conserva entre reconstrucciones del resize
+      function buildTalentCarousel() {
+        if (window.innerWidth > 768) return;
+        const row = document.getElementById('discover-talent-row');
+        if (!row || row.dataset.built) return;
+        row.dataset.built = '1';
+
+        const cols = Array.from(row.querySelectorAll(':scope > .col-md-4'));
+        if (!cols.length) return;
+
+        const wrap = document.createElement('div');
+        wrap.className = 'mob-carousel-wrap';
+        wrap.id = 'talent-carousel-mob';
+        wrap.style.padding = '0 8px';
+
+        const ctrack = document.createElement('div');
+        ctrack.className = 'mob-carousel-track';
+
+        cols.forEach(col => {
+          const slide = document.createElement('div');
+          slide.className = 'mob-carousel-slide';
+          slide.appendChild(col.firstElementChild.cloneNode(true));
+          ctrack.appendChild(slide);
+        });
+        wrap.appendChild(ctrack);
+
+        const controls = document.createElement('div');
+        controls.className = 'mob-carousel-controls';
+        controls.innerHTML = `
+          <button class="mob-carousel-arrow" id="tc-prev" aria-label="Anterior">&#10094;</button>
+          <span class="mob-carousel-counter" id="tc-counter">1 / ${cols.length}</span>
+          <button class="mob-carousel-arrow" id="tc-next" aria-label="Siguiente">&#10095;</button>`;
+        wrap.appendChild(controls);
+
+        const dotsBar = document.createElement('div');
+        dotsBar.className = 'mob-carousel-dots';
+        cols.forEach((_, i) => {
+          const d = document.createElement('button');
+          d.className = 'mob-carousel-dot' + (i === 0 ? ' active' : '');
+          dotsBar.appendChild(d);
+        });
+        wrap.appendChild(dotsBar);
+
+        row.parentNode.insertBefore(wrap, row.nextSibling);
+
+        let tIdx = talentIndex;
+        const tDots = wrap.querySelectorAll('.mob-carousel-dot');
+
+        function tGo(idx) {
+          tIdx = (idx + cols.length) % cols.length;
+          talentIndex = tIdx;
+          ctrack.style.transform = `translateX(-${tIdx * 100}%)`;
+          document.getElementById('tc-counter').textContent = `${tIdx + 1} / ${cols.length}`;
+          tDots.forEach((d, i) => d.classList.toggle('active', i === tIdx));
+        }
+
+        wrap.querySelector('#tc-prev').addEventListener('click', () => tGo(tIdx - 1));
+        wrap.querySelector('#tc-next').addEventListener('click', () => tGo(tIdx + 1));
+        tDots.forEach((d, i) => d.addEventListener('click', () => tGo(i)));
+        if (talentIndex > 0) tGo(talentIndex);
+      }
+
+      buildTalentCarousel();
+      // Reconstruir solo al cruzar el breakpoint 768px, con debounce,
+      // para no perder la diapositiva cuando la barra del navegador dispara resize
+      let tcLastIsMobile = window.innerWidth <= 768;
+      let tcTimer;
+      window.addEventListener('resize', () => {
+        clearTimeout(tcTimer);
+        tcTimer = setTimeout(() => {
+          const isMobile = window.innerWidth <= 768;
+          if (isMobile === tcLastIsMobile) return;
+          tcLastIsMobile = isMobile;
+          const old = document.getElementById('talent-carousel-mob');
+          if (old) old.remove();
+          const row = document.getElementById('discover-talent-row');
+          if (row) delete row.dataset.built;
+          buildTalentCarousel();
+        }, 150);
+      });
+    });
+  </script>
+</body>
+</html>

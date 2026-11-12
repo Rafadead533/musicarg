@@ -1,0 +1,14 @@
+# Configuración de Netlify
+# - publish: dónde están los archivos estáticos (index.html, css/, js/, imgs/)
+# - functions: dónde viven las funciones serverless (spotify.js)
+
+[build]
+  publish = "."
+  functions = "netlify/functions"
+
+# Headers de seguridad básicos
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"

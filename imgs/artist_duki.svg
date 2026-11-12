@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="dukiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f24e1e"/>
+      <stop offset="100%" stop-color="#c43306"/>
+    </linearGradient>
+  </defs>
+  <rect width="350" height="400" fill="url(#dukiGrad)"/>
+  
+  <g fill="#1a1c4b">
+    <!-- Hombros y torso -->
+    <path d="M 40 400 L 90 280 L 160 300 L 200 300 L 270 280 L 320 400 Z"/>
+    
+    <!-- Cuello y Mandíbula fuerte -->
+    <path d="M 140 290 L 140 220 Q 110 180 120 120 Q 130 60 180 55 Q 230 60 240 120 Q 245 180 220 220 L 220 290 Z" fill="#f24e1e"/>
+    
+    <!-- Pelo corte Rapado / Fade con textura -->
+    <path d="M 120 110 C 120 50, 160 35, 185 35 C 220 35, 245 50, 245 110 C 230 80, 200 75, 180 75 C 160 75, 135 80, 120 110 Z" fill="#141635"/>
+    
+    <!-- Tatuajes faciales característicos (alas bajo los ojos) -->
+    <path d="M 130 145 Q 145 140 155 148 M 130 155 Q 145 150 155 158" stroke="#141635" stroke-width="2.5" fill="none"/>
+    <path d="M 230 145 Q 215 140 205 148 M 230 155 Q 215 150 205 158" stroke="#141635" stroke-width="2.5" fill="none"/>
+    
+    <!-- Mirada desafiante -->
+    <path d="M 145 130 Q 160 120 170 128 M 190 128 Q 200 120 215 130" stroke="#141635" stroke-width="4" fill="none"/>
+    <ellipse cx="160" cy="138" rx="5" ry="5" fill="#141635"/>
+    <ellipse cx="202" cy="138" rx="5" ry="5" fill="#141635"/>
+    
+    <!-- Nariz y boca -->
+    <path d="M 182 135 L 184 170 L 176 176 H 188" stroke="#141635" stroke-width="3" fill="none"/>
+    <path d="M 170 195 Q 182 200 194 195" stroke="#141635" stroke-width="4" stroke-linecap="round" fill="none"/>
+  </g>
+</svg>

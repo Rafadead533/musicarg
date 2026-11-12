@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f24e1e"/>
+      <stop offset="100%" stop-color="#d63b0e"/>
+    </linearGradient>
+    <filter id="grunge">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" result="noise"/>
+      <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.15 0"/>
+      <feBlend in="SourceGraphic" in2="noise" mode="multiply"/>
+    </filter>
+  </defs>
+  <!-- Fondo Naranja Silkscreen -->
+  <rect width="400" height="500" fill="url(#bgGrad)"/>
+  
+  <!-- Ilustración Vectorial Duotono Mercedes Sosa tocando el bombo -->
+  <g fill="#1a1c4b">
+    <!-- Silueta Cuerpo y Poncho -->
+    <path d="M 50 500 C 60 400, 100 320, 150 280 C 130 250, 120 200, 130 140 C 140 80, 200 60, 260 70 C 310 80, 340 120, 330 180 C 320 230, 290 270, 270 290 C 320 330, 360 410, 380 500 Z"/>
+    
+    <!-- Pelo característico recogido y rostro -->
+    <path d="M 170 120 Q 220 70 280 110 Q 320 150 290 210 Q 250 260 190 230 Q 150 180 170 120 Z" fill="#14163a"/>
+    
+    <!-- Rasgos en alto contraste (naranja invertido) -->
+    <path d="M 205 145 Q 230 135 250 140 Q 260 155 245 160 Q 225 155 205 145 Z" fill="#f24e1e"/>
+    <path d="M 230 155 L 240 190 L 225 195 Z" fill="#f24e1e"/>
+    <path d="M 215 205 Q 235 220 260 205 Q 240 215 215 205 Z" fill="#f24e1e"/>
+    
+    <!-- Bombo Legüero -->
+    <ellipse cx="280" cy="370" rx="95" ry="115" fill="#14163a"/>
+    <ellipse cx="280" cy="370" rx="80" ry="100" fill="#f24e1e" opacity="0.35"/>
+    <!-- Parche y cuerdas del bombo -->
+    <path d="M 200 320 L 360 420 M 200 420 L 360 320 M 280 260 L 280 480" stroke="#f24e1e" stroke-width="4"/>
+    <!-- Brazo y maza de percusión -->
+    <path d="M 120 330 Q 180 300 230 350 Q 260 380 270 340" stroke="#14163a" stroke-width="28" stroke-linecap="round" fill="none"/>
+    <circle cx="270" cy="340" r="16" fill="#14163a"/>
+  </g>
+  
+  <!-- Textura serigráfica estarcido -->
+  <rect width="400" height="500" fill="#000" opacity="0.08" style="mix-blend-mode: overlay;"/>
+</svg>

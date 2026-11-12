@@ -1,0 +1,539 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Historia de la Música Argentina - Inicio</title>
+  <meta name="description"
+    content="Recorrido histórico por la música argentina: Folklore, Tango, Rock Nacional, Cumbia y Movimiento Urbano.">
+
+  <!-- Favicon con el logo oficial -->
+  <link rel="icon" type="image/png" href="imgs/logo.png">
+
+  <!-- Precarga de fuentes locales: evita el "parpadeo" de fuentes al cambiar de pestaña -->
+  <link rel="preload" href="css/font/BebasNeue-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="css/font/ClashDisplay-Bold.otf" as="font" type="font/otf" crossorigin>
+  <link rel="preload" href="css/font/LeagueSpartan-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin>
+
+  <!-- Estilos y Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ========================================================================
+       BARRA DE NAVEGACIÓN SUPERIOR
+       ======================================================================== -->
+  <header class="site-header">
+    <div class="header-container">
+      <!-- Logo cuadrado naranja -->
+      <a href="index.html" class="logo-box" id="brand-logo" aria-label="Ir al inicio"
+        title="Historia de la Música Argentina">
+        <img src="imgs/logo_white.png" alt="Logo Música Argentina" class="brand-logo-img">
+      </a>
+
+      <!-- Menú principal -->
+      <nav aria-label="Navegación principal">
+        <ul class="main-nav" id="main-nav-list">
+          <li>
+            <a href="index.html" class="nav-link-item active" id="nav-inicio" aria-current="page">INICIO</a>
+          </li>
+          <li>
+            <a href="html/pagina1.html" class="nav-link-item" id="nav-historia">HISTORIA</a>
+          </li>
+          <li>
+            <a href="html/pagina2.html" class="nav-link-item" id="nav-descubrir">DESCUBRIR</a>
+          </li>
+          <li>
+            <a href="html/pagina3.html" class="nav-link-item" id="nav-playlists">PLAYLISTS</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Campo de Búsqueda BUSCAR -->
+      <div class="header-search-wrap">
+        <input type="text" class="header-search-input" id="search-input" placeholder="BUSCAR"
+          aria-label="Buscar música o artistas">
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       HERO SLIDER / CAROUSEL PRINCIPAL (DISEÑO FIEL A LA MAQUETA 1)
+       ======================================================================== -->
+  <section class="hero-slider-section" id="hero-slider">
+    <div class="carousel-custom-container">
+
+      <!-- Flecha Izquierda (<) -->
+      <button class="carousel-arrow prev" id="carousel-prev" aria-label="Diapositiva anterior">
+        &#10094;
+      </button>
+
+      <!-- Contenedor del Carrusel -->
+      <div class="hero-carousel">
+        <div class="carousel-track" id="carousel-track">
+
+          <!-- SLIDE 1: ROCK NACIONAL & CULTURA POPULAR -->
+          <div class="carousel-slide" data-slide-index="0">
+            <div class="slide-outer-frame" style="background-image: url('imgs/publico.png');">
+              <div class="slide-center-box">
+                <img src="imgs/lamona.png" alt="Concierto de la mona gimenez" class="box-bg-image">
+                <div class="box-overlay"></div>
+
+                <!-- Cita en esquina superior derecha -->
+                <div class="hero-quote">
+                  “El futuro llegó hace rato”
+                </div>
+
+                <!-- Bloque tipográfico: recordá DESCUBRÍ DISFRUTÁ -->
+                <div class="hero-taglines">
+                  <span class="tagline-sub">recordá</span>
+                  <h1 class="tagline-main">DESCUBRÍ</h1>
+                  <span class="tagline-bottom">DISFRUTÁ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SLIDE 2: TANGO Y RAÍCES DEL RÍO DE LA PLATA -->
+          <div class="carousel-slide" data-slide-index="1">
+            <div class="slide-outer-frame" style="background-image: url('imgs/paco\ amoroso\ fondo.png');">
+              <div class="slide-center-box">
+                <img src="imgs/duki.png" alt="duki en un Concierto" class="box-bg-image">
+                <div class="box-overlay"></div>
+
+                <div class="hero-quote">
+                  “El tango te espera en la esquina”
+                </div>
+
+                <div class="hero-taglines">
+                  <span class="tagline-sub">sentí</span>
+                  <div class="tagline-main">NUESTRA VOZ</div>
+                  <span class="tagline-bottom">PATRIMONIO INMATERIAL</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SLIDE 3: MOVIMIENTO URBANO & NUEVA GENERACIÓN -->
+          <div class="carousel-slide" data-slide-index="2">
+            <div class="slide-outer-frame" style="background-image: url('imgs/callejero\ fino\ fondo.png');">
+              <div class="slide-center-box">
+                <img src="imgs/rendondos.png" alt="Juventud y cultura urbana" class="box-bg-image">
+                <div class="box-overlay"></div>
+
+                <div class="hero-quote">
+                  “De las plazas para el mundo entero”
+                </div>
+
+                <div class="hero-taglines">
+                  <span class="tagline-sub">viví</span>
+                  <div class="tagline-main">EL FENÓMENO</div>
+                  <span class="tagline-bottom">TRAP, RKT Y FREESTYLE</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Flecha Derecha (>) -->
+      <button class="carousel-arrow next" id="carousel-next" aria-label="Siguiente diapositiva">
+        &#10095;
+      </button>
+
+      <!-- Indicadores puntitos -->
+      <div class="carousel-dots" id="carousel-dots">
+        <button class="carousel-dot active" data-index="0" aria-label="Diapositiva 1"></button>
+        <button class="carousel-dot" data-index="1" aria-label="Diapositiva 2"></button>
+        <button class="carousel-dot" data-index="2" aria-label="Diapositiva 3"></button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       ACCESOS PRINCIPALES A LAS SECCIONES DEL PROYECTO
+       ======================================================================== -->
+  <main class="container-custom section-spacing">
+    <div class="section-header text-center mb-5">
+      <span class="badge px-3 py-2 text-uppercase mb-2 d-inline-flex align-items-center gap-2"
+        style="background: rgba(242,78,30,0.15); color: var(--color-naranja); border: 1px solid var(--color-naranja); letter-spacing: 1.5px;">
+        <img src="imgs/logo.png" alt="" style="height: 18px; width: auto;">
+        <span>Patrimonio Cultural Argentino</span>
+      </span>
+      <h2>LA HISTORIA SONORA DE UN PAÍS</h2>
+      <p class="text-white-50 mx-auto" style="max-width: 680px; font-size: 1.1rem;">
+        Un recorrido integral desde el folklore criollo y los firuletes del tango hasta el rock de estadios y el
+        fenómeno mundial del trap y RKT.
+      </p>
+    </div>
+
+    <div class="row g-4" id="home-cards-row">
+      <!-- Tarjeta 1: HISTORIA -->
+      <div class="col-md-4">
+        <div class="home-action-card p-4 rounded-3 h-100 d-flex flex-column">
+          <!-- Fondo decorativo con la imagen del Banner 1 (publico.png) -->
+          <div class="action-card-bg" style="background-image: url('imgs/publico.png');"></div>
+          <div class="action-card-overlay"></div>
+
+          <div class="action-card-content d-flex flex-column h-100">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <div class="card-icon-box rounded-2 d-flex align-items-center justify-content-center">
+                <i class="bi bi-book"></i>
+              </div>
+              <div class="card-brand-pill">
+                <img src="imgs/logo.png" alt="Logo" class="card-brand-pill-img">
+                <span>ORIGEN</span>
+              </div>
+            </div>
+
+            <h3 class="action-card-title">HISTORIA</h3>
+            <p class="text-white-50 flex-grow-1 action-card-text">
+              Conocé las raíces del Folklore, la época de oro del Tango con Gardel y la revolución fundacional del Rock
+              Nacional.
+            </p>
+
+            <!-- Tira decorativa sobre el botón con la imagen del banner 1 y el logo -->
+            <div class="card-banner-strip">
+              <img src="imgs/publico.png" alt="Público en concierto de rock y folklore" class="strip-bg-img">
+              <div class="strip-overlay"></div>
+              <div class="strip-content">
+                <div class="strip-badge-wrap">
+                  <img src="imgs/logo.png" alt="Logo" class="strip-logo-img">
+                  <span class="strip-badge-text">FOLKLORE • TANGO • ROCK</span>
+                </div>
+                <span class="strip-pill-tag">ÉPOCAS</span>
+              </div>
+            </div>
+
+            <a href="html/pagina1.html"
+              class="home-action-btn btn text-white fw-bold d-flex justify-content-between align-items-center py-2 px-3">
+              <span class="d-flex align-items-center gap-2">
+                <img src="imgs/logo_white.png" alt="" class="btn-logo-symbol">
+                <span>IR A HISTORIA</span>
+              </span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tarjeta 2: DESCUBRIR -->
+      <div class="col-md-4">
+        <div class="home-action-card p-4 rounded-3 h-100 d-flex flex-column">
+          <!-- Fondo decorativo con la imagen del Banner 2 (paco amoroso fondo.png) -->
+          <div class="action-card-bg" style="background-image: url('imgs/paco amoroso fondo.png');"></div>
+          <div class="action-card-overlay"></div>
+
+          <div class="action-card-content d-flex flex-column h-100">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <div class="card-icon-box rounded-2 d-flex align-items-center justify-content-center">
+                <i class="bi bi-compass"></i>
+              </div>
+              <div class="card-brand-pill">
+                <img src="imgs/logo.png" alt="Logo" class="card-brand-pill-img">
+                <span>FUTURO</span>
+              </div>
+            </div>
+
+            <h3 class="action-card-title">DESCUBRIR</h3>
+            <p class="text-white-50 flex-grow-1 action-card-text">
+              Explorá los nuevos exponentes y talentos emergentes: MHTresUno, LautaroRL, Ramma y el sonido de los
+              barrios
+              argentinos.
+            </p>
+
+            <!-- Tira decorativa sobre el botón con la imagen del banner 2 y el logo -->
+            <div class="card-banner-strip">
+              <img src="imgs/paco amoroso fondo.png" alt="Nuevos talentos de la música urbana" class="strip-bg-img">
+              <div class="strip-overlay"></div>
+              <div class="strip-content">
+                <div class="strip-badge-wrap">
+                  <img src="imgs/logo.png" alt="Logo" class="strip-logo-img">
+                  <span class="strip-badge-text">TRAP • RKT • NUEVA OLA</span>
+                </div>
+                <span class="strip-pill-tag">TALENTO</span>
+              </div>
+            </div>
+
+            <a href="html/pagina2.html"
+              class="home-action-btn btn text-white fw-bold d-flex justify-content-between align-items-center py-2 px-3">
+              <span class="d-flex align-items-center gap-2">
+                <img src="imgs/logo_white.png" alt="" class="btn-logo-symbol">
+                <span>DESCUBRIR TALENTOS</span>
+              </span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tarjeta 3: PLAYLISTS -->
+      <div class="col-md-4">
+        <div class="home-action-card p-4 rounded-3 h-100 d-flex flex-column">
+          <!-- Fondo decorativo con la imagen del Banner 3 (callejero fino fondo.png) -->
+          <div class="action-card-bg" style="background-image: url('imgs/callejero fino fondo.png');"></div>
+          <div class="action-card-overlay"></div>
+
+          <div class="action-card-content d-flex flex-column h-100">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <div class="card-icon-box rounded-2 d-flex align-items-center justify-content-center">
+                <i class="bi bi-collection-play"></i>
+              </div>
+              <div class="card-brand-pill">
+                <img src="imgs/logo.png" alt="Logo" class="card-brand-pill-img">
+                <span>SONIDO</span>
+              </div>
+            </div>
+
+            <h3 class="action-card-title">PLAYLISTS</h3>
+            <p class="text-white-50 flex-grow-1 action-card-text">
+              Escuchá las listas oficiales ordenadas por género: Duki, La Joaqui, Bizarrap, Milo J y los himnos del
+              sonido
+              urbano.
+            </p>
+
+            <!-- Tira decorativa sobre el botón con la imagen del banner 3 y el logo -->
+            <div class="card-banner-strip">
+              <img src="imgs/callejero fino fondo.png" alt="Playlists y música argentina" class="strip-bg-img">
+              <div class="strip-overlay"></div>
+              <div class="strip-content">
+                <div class="strip-badge-wrap">
+                  <img src="imgs/logo.png" alt="Logo" class="strip-logo-img">
+                  <span class="strip-badge-text">ÉXITOS & COLECCIONES</span>
+                </div>
+                <span class="strip-pill-tag">LISTAS</span>
+              </div>
+            </div>
+
+            <a href="html/pagina3.html"
+              class="home-action-btn btn text-white fw-bold d-flex justify-content-between align-items-center py-2 px-3">
+              <span class="d-flex align-items-center gap-2">
+                <img src="imgs/logo_white.png" alt="" class="btn-logo-symbol">
+                <span>VER PLAYLISTS</span>
+              </span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ========================================================================
+       FOOTER
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container-custom">
+      <div
+        class="d-flex flex-wrap justify-content-between align-items-center pb-4 border-bottom border-secondary border-opacity-25 gap-3">
+        <div class="d-flex align-items-center gap-3">
+          <div class="logo-box" style="width: 44px; height: 38px; padding: 5px;">
+            <img src="imgs/logo_white.png" alt="Logo Música Argentina" class="brand-logo-img" style="max-height: 28px;">
+          </div>
+          <div>
+            <h4 class="m-0 text-white" style="font-size: 1.5rem;">MÚSICA ARGENTINA</h4>
+            <small class="text-white-50">Historia, cultura y diversidad sonora</small>
+          </div>
+        </div>
+
+        <ul class="d-flex gap-4 list-unstyled m-0 p-0">
+          <li><a href="index.html" class="text-white">INICIO</a></li>
+          <li><a href="html/pagina1.html" class="text-white">HISTORIA</a></li>
+          <li><a href="html/pagina2.html" class="text-white">DESCUBRIR</a></li>
+          <li><a href="html/pagina3.html" class="text-white">PLAYLISTS</a></li>
+        </ul>
+      </div>
+
+      <div class="d-flex flex-wrap justify-content-between align-items-center pt-3 text-white-50 small">
+        <div>&copy; 2026 Historia de la Música Argentina. Todos los derechos reservados.</div>
+        <div class="d-flex gap-3 fs-5">
+          <a href="#" class="text-white-50"><i class="bi bi-spotify"></i></a>
+          <a href="#" class="text-white-50"><i class="bi bi-youtube"></i></a>
+          <a href="#" class="text-white-50"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       BOTTOM NAV BAR FIJA (solo mobile)
+       ======================================================================== -->
+  <nav class="mobile-bottom-nav" aria-label="Navegación móvil">
+    <a href="index.html" class="active" id="mob-inicio" aria-label="Inicio">
+      <i class="bi bi-house-fill"></i>
+      <span>Inicio</span>
+    </a>
+    <a href="html/pagina1.html" id="mob-historia" aria-label="Historia">
+      <i class="bi bi-book"></i>
+      <span>Historia</span>
+    </a>
+    <a href="html/pagina2.html" id="mob-descubrir" aria-label="Descubrir">
+      <i class="bi bi-compass"></i>
+      <span>Descubrir</span>
+    </a>
+    <a href="html/pagina3.html" id="mob-playlists" aria-label="Playlists">
+      <i class="bi bi-collection-play"></i>
+      <span>Playlists</span>
+    </a>
+    <button type="button" class="mob-search-btn" id="mob-search" aria-label="Buscar artistas">
+      <i class="bi bi-search"></i>
+      <span>Buscar</span>
+    </button>
+  </nav>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+  <!-- Buscador real (Spotify / Apple Music / Wikipedia) -->
+  <script src="js/music-api.js"></script>
+  <script src="js/search.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+      /* ── Carrusel HERO (slider principal) ── */
+      const track = document.getElementById('carousel-track');
+      const slides = document.querySelectorAll('.carousel-slide');
+      const dots = document.querySelectorAll('.carousel-dot');
+      const prevBtn = document.getElementById('carousel-prev');
+      const nextBtn = document.getElementById('carousel-next');
+      let currentSlide = 0;
+      const totalSlides = slides.length;
+      let autoPlayInterval;
+
+      function updateCarousel(index) {
+        currentSlide = (index + totalSlides) % totalSlides;
+        track.style.transform = `translateX(-${currentSlide * 100}%)`;
+        dots.forEach((dot, idx) => dot.classList.toggle('active', idx === currentSlide));
+      }
+
+      if (prevBtn && nextBtn) {
+        prevBtn.addEventListener('click', () => { updateCarousel(currentSlide - 1); resetAutoPlay(); });
+        nextBtn.addEventListener('click', () => { updateCarousel(currentSlide + 1); resetAutoPlay(); });
+      }
+
+      dots.forEach(dot => {
+        dot.addEventListener('click', e => {
+          updateCarousel(parseInt(e.target.getAttribute('data-index'), 10));
+          resetAutoPlay();
+        });
+      });
+
+      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      function startAutoPlay() {
+        // Respeta la preferencia de movimiento reducido: no rota solo
+        if (reduceMotion) return;
+        autoPlayInterval = setInterval(() => updateCarousel(currentSlide + 1), 5500);
+      }
+      function resetAutoPlay() { clearInterval(autoPlayInterval); startAutoPlay(); }
+      startAutoPlay();
+
+      /* ── Carrusel MOBILE de las 3 tarjetas de acceso ── */
+      let homeCarouselIndex = 0; // se conserva entre reconstrucciones del resize
+      function buildHomeMobileCarousel() {
+        if (window.innerWidth > 768) return;
+
+        const row = document.getElementById('home-cards-row');
+        if (!row || row.dataset.carouselBuilt) return;
+        row.dataset.carouselBuilt = '1';
+
+        // Recoger los col-md-4
+        const cols = Array.from(row.querySelectorAll(':scope > .col-md-4'));
+        if (!cols.length) return;
+
+        // Crear el contenedor del carrusel mobile
+        const wrap = document.createElement('div');
+        wrap.className = 'mob-carousel-wrap';
+        wrap.id = 'home-carousel-mob';
+
+        // Track
+        const ctrack = document.createElement('div');
+        ctrack.className = 'mob-carousel-track';
+
+        cols.forEach(col => {
+          const slide = document.createElement('div');
+          slide.className = 'mob-carousel-slide';
+          slide.appendChild(col.querySelector('.home-action-card').cloneNode(true));
+          ctrack.appendChild(slide);
+        });
+
+        wrap.appendChild(ctrack);
+
+        // Controles
+        const controls = document.createElement('div');
+        controls.className = 'mob-carousel-controls';
+        controls.innerHTML = `
+          <button class="mob-carousel-arrow" id="hc-prev" aria-label="Anterior">&#10094;</button>
+          <span class="mob-carousel-counter" id="hc-counter">1 / ${cols.length}</span>
+          <button class="mob-carousel-arrow" id="hc-next" aria-label="Siguiente">&#10095;</button>
+        `;
+        wrap.appendChild(controls);
+
+        // Dots
+        const dotsBar = document.createElement('div');
+        dotsBar.className = 'mob-carousel-dots';
+        cols.forEach((_, i) => {
+          const d = document.createElement('button');
+          d.className = 'mob-carousel-dot' + (i === 0 ? ' active' : '');
+          d.setAttribute('aria-label', `Sección ${i + 1}`);
+          dotsBar.appendChild(d);
+        });
+        wrap.appendChild(dotsBar);
+
+        // Insertar después del row (que está oculto en mobile via CSS)
+        row.parentNode.insertBefore(wrap, row.nextSibling);
+
+        let hcIdx = homeCarouselIndex;
+        const hcDots = wrap.querySelectorAll('.mob-carousel-dot');
+
+        function hcGo(idx) {
+          hcIdx = (idx + cols.length) % cols.length;
+          homeCarouselIndex = hcIdx;
+          ctrack.style.transform = `translateX(-${hcIdx * 100}%)`;
+          document.getElementById('hc-counter').textContent = `${hcIdx + 1} / ${cols.length}`;
+          hcDots.forEach((d, i) => d.classList.toggle('active', i === hcIdx));
+        }
+
+        wrap.querySelector('#hc-prev').addEventListener('click', () => hcGo(hcIdx - 1));
+        wrap.querySelector('#hc-next').addEventListener('click', () => hcGo(hcIdx + 1));
+        hcDots.forEach((d, i) => d.addEventListener('click', () => hcGo(i)));
+        if (homeCarouselIndex > 0) hcGo(homeCarouselIndex);
+      }
+
+      buildHomeMobileCarousel();
+      // Reconstruir solo al cruzar el breakpoint 768px, con debounce,
+      // para no resetear la diapositiva cuando la barra del navegador dispara resize
+      let hcLastIsMobile = window.innerWidth <= 768;
+      let hcTimer;
+      window.addEventListener('resize', () => {
+        clearTimeout(hcTimer);
+        hcTimer = setTimeout(() => {
+          const isMobile = window.innerWidth <= 768;
+          if (isMobile === hcLastIsMobile) return;
+          hcLastIsMobile = isMobile;
+          const old = document.getElementById('home-carousel-mob');
+          if (old) { old.remove(); }
+          const row = document.getElementById('home-cards-row');
+          if (row) delete row.dataset.carouselBuilt;
+          buildHomeMobileCarousel();
+        }, 150);
+      });
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Historia de la Música Argentina - Historia</title>
+  <meta name="description"
+    content="Recorrido por la historia de la música argentina: Folklore, Tango, Rock Nacional, Cumbia y Urbano.">
+
+  <!-- Favicon con el logo oficial -->
+  <link rel="icon" type="image/png" href="../imgs/logo.png">
+
+  <!-- Precarga de fuentes locales: evita el "parpadeo" de fuentes al cambiar de pestaña -->
+  <link rel="preload" href="../css/font/BebasNeue-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="../css/font/ClashDisplay-Bold.otf" as="font" type="font/otf" crossorigin>
+  <link rel="preload" href="../css/font/LeagueSpartan-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+  <!-- ========================================================================
+       BARRA DE NAVEGACIÓN
+       ======================================================================== -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="../index.html" class="logo-box" aria-label="Ir al inicio" title="Historia de la Música Argentina">
+        <img src="../imgs/logo_white.png" alt="Logo Música Argentina" class="brand-logo-img">
+      </a>
+
+      <nav aria-label="Navegación principal">
+        <ul class="main-nav" id="main-nav-list">
+          <li><a href="../index.html" class="nav-link-item">INICIO</a></li>
+          <li><a href="pagina1.html" class="nav-link-item active" aria-current="page">HISTORIA</a></li>
+          <li><a href="pagina2.html" class="nav-link-item">DESCUBRIR</a></li>
+          <li><a href="pagina3.html" class="nav-link-item">PLAYLISTS</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-search-wrap">
+        <input type="text" class="header-search-input" placeholder="BUSCAR" aria-label="Buscar en la web">
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       CONTENIDO PRINCIPAL: HISTORIA DE LA MÚSICA ARGENTINA (FIEL A LA MAQUETA 2)
+       ======================================================================== -->
+  <main class="history-page-wrapper">
+    <!-- Título principal centrado -->
+    <h1 class="history-page-title">HISTORIA DE LA MUSICA ARGENTINA</h1>
+
+    <div class="history-content-layout">
+
+      <!-- Columna izquierda: Pestañas de géneros -->
+      <aside class="genre-sidebar-box" aria-label="Seleccionar género">
+        <a href="#genre-folklore" class="genre-sidebar-item genre-badge-folklore active" data-target="genre-folklore">
+          Folklore
+        </a>
+        <a href="#genre-tango" class="genre-sidebar-item genre-badge-tango" data-target="genre-tango">
+          Tango
+        </a>
+        <a href="#genre-rock" class="genre-sidebar-item genre-badge-rock" data-target="genre-rock">
+          ROCK
+        </a>
+        <a href="#genre-cumbia" class="genre-sidebar-item genre-badge-cumbia" data-target="genre-cumbia">
+          Cumbia
+        </a>
+        <a href="#genre-urbano" class="genre-sidebar-item genre-badge-urbano" data-target="genre-urbano">
+          URBANO
+        </a>
+      </aside>
+
+      <!-- Línea divisoria vertical blanca -->
+      <div class="history-vertical-line" aria-hidden="true"></div>
+
+      <!-- Columna derecha: Cronología y Artistas clave -->
+      <div class="history-timeline-column">
+
+        <!-- SECCIÓN 1: FOLKLORE (Texto Izquierda / Imagen Mercedes Sosa Derecha) -->
+        <section class="history-genre-row" id="genre-folklore">
+          <div class="history-text-block">
+            <h2 class="history-genre-title">FOLKLORE</h2>
+            <p>
+              Fusión de culturas indígenas, españolas y africanas, con raíces que se remontan a la conquista. Incluye
+              géneros regionales como la zamba, la chacarera, el chamamé, la vidala y la cueca. Se consolidó como género
+              principal con el "boom del folklore" en los años 50. Artistas clave: Atahualpa Yupanqui, Mercedes Sosa.
+            </p>
+          </div>
+          <div class="history-image-card">
+            <img src="../imgs/MercedesSosa.png" alt="Ilustración duotono de Mercedes Sosa tocando el bombo legüero">
+          </div>
+        </section>
+
+        <!-- SECCIÓN 2: TANGO (Imagen Carlos Gardel Izquierda / Texto Derecha) -->
+        <section class="history-genre-row reverse" id="genre-tango">
+          <div class="history-image-card">
+            <img src="../imgs/Gardel.png" alt="Ilustración de Carlos Gardel sonriendo con sombrero y traje">
+          </div>
+          <div class="history-text-block">
+            <h2 class="history-genre-title">TANGO</h2>
+            <p>
+              Nace a fines del siglo XIX en los barrios populares de Buenos Aires y Montevideo, de la mezcla de milonga,
+              candombe y habanera. Se caracteriza por el bandoneón y letras melancólicas. Atravesó su "edad de oro"
+              entre 1920 y 1970 con artistas como Carlos Gardel y Roberto Goyeneche. Hoy es patrimonio inmaterial de la
+              humanidad (UNESCO).
+            </p>
+          </div>
+        </section>
+
+        <!-- SECCIÓN 3: ROCK (Texto Izquierda / Imagen Charly García Derecha) -->
+        <section class="history-genre-row" id="genre-rock">
+          <div class="history-text-block">
+            <h2 class="history-genre-title">ROCK NACIONAL</h2>
+            <p>
+              Surge en los años 60 y 70 como respuesta al rock anglosajón, pero con identidad propia y letras en español
+              de fuerte contenido social y político. Bandas fundacionales: Almendra, Los Gatos, Manal. En los 80 y 90 se
+              consolida con Soda Stereo, Patricio Rey y sus Redonditos de Ricota y Charly García. Es el género más
+              escuchado según encuestas nacionales (59%).
+            </p>
+          </div>
+          <div class="history-image-card">
+            <img src="../imgs/CharlyGarcia.png" alt="Ilustración duotono en alto contraste de Charly García">
+          </div>
+        </section>
+
+        <!-- SECCIÓN 4: CUMBIA (Texto Izquierda / Gráfica Derecha) -->
+        <section class="history-genre-row reverse" id="genre-cumbia">
+          <div class="history-image-card">
+            <img src="../imgs/DamasGratis.png" alt="Ilustración duotono de Damas Gratis">
+          </div>
+          <div class="history-text-block">
+            <h2 class="history-genre-title">CUMBIA</h2>
+            <p>
+              Arribada a mediados del siglo XX desde Colombia, la cumbia fue adoptada y reinventada en las provincias y
+              el conurbano con la cumbia santafesina, la cumbia norteña y posteriormente la cumbia villera a fines de
+              los 90 (Damas Gratis, Los Pibes Chorros), convirtiéndose en la banda sonora de la fiesta popular.
+            </p>
+          </div>
+
+        </section>
+
+        <!-- SECCIÓN 5: URBANO (Texto Izquierda / Gráfica Derecha) -->
+        <section class="history-genre-row" id="genre-urbano">
+          <div class="history-text-block">
+            <h2 class="history-genre-title">MOVIMIENTO URBANO</h2>
+            <p>
+              Heredero de las batallas de freestyle de plaza (El Quinto Escalón), el trap y la música urbana argentina
+              irrumpieron en 2017 para conquistar las plataformas globales. Artistas como Duki, Bizarrap, YSY A, Cazzu y
+              Milo J redefinieron la industria independiente con récords mundiales.
+            </p>
+          </div>
+          <div class="history-image-card">
+            <img src="../imgs/DukiPlaylist.png" alt="Ilustración duotono de Duki en representación del género urbano">
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- ========================================================================
+       BARRA DE ÉPOCAS FIJA PARA MÓVIL (visible solo en mobile, encima del bottom nav)
+       ======================================================================== -->
+  <nav class="mobile-genre-epochbar" aria-label="Épocas musicales">
+    <a href="#genre-folklore" class="genre-sidebar-item genre-badge-folklore active"
+      data-target="genre-folklore">Folklore</a>
+    <a href="#genre-tango" class="genre-sidebar-item genre-badge-tango" data-target="genre-tango">Tango</a>
+    <a href="#genre-rock" class="genre-sidebar-item genre-badge-rock" data-target="genre-rock">Rock</a>
+    <a href="#genre-cumbia" class="genre-sidebar-item genre-badge-cumbia" data-target="genre-cumbia">Cumbia</a>
+    <a href="#genre-urbano" class="genre-sidebar-item genre-badge-urbano" data-target="genre-urbano">Urbano</a>
+  </nav>
+
+  <!-- ========================================================================
+       BOTTOM NAV BAR FIJA (solo mobile)
+       ======================================================================== -->
+  <nav class="mobile-bottom-nav" aria-label="Navegación móvil">
+    <a href="../index.html" id="mob-inicio" aria-label="Inicio">
+      <i class="bi bi-house-fill"></i>
+      <span>Inicio</span>
+    </a>
+    <a href="pagina1.html" class="active" id="mob-historia" aria-label="Historia">
+      <i class="bi bi-book"></i>
+      <span>Historia</span>
+    </a>
+    <a href="pagina2.html" id="mob-descubrir" aria-label="Descubrir">
+      <i class="bi bi-compass"></i>
+      <span>Descubrir</span>
+    </a>
+    <a href="pagina3.html" id="mob-playlists" aria-label="Playlists">
+      <i class="bi bi-collection-play"></i>
+      <span>Playlists</span>
+    </a>
+    <button type="button" class="mob-search-btn" id="mob-search" aria-label="Buscar artistas">
+      <i class="bi bi-search"></i>
+      <span>Buscar</span>
+    </button>
+  </nav>
+
+  <footer class="site-footer">
+    <div class="container-custom">
+      <div
+        class="d-flex flex-wrap justify-content-between align-items-center pb-4 border-bottom border-secondary border-opacity-25 gap-3">
+        <div class="d-flex align-items-center gap-3">
+          <div class="logo-box" style="width: 44px; height: 38px; padding: 5px;">
+            <img src="../imgs/logo_white.png" alt="Logo Música Argentina" class="brand-logo-img"
+              style="max-height: 28px;">
+          </div>
+          <div>
+            <h4 class="m-0 text-white" style="font-size: 1.5rem;">MÚSICA ARGENTINA</h4>
+            <small class="text-white-50">Historia, cultura y diversidad sonora</small>
+          </div>
+        </div>
+
+        <ul class="d-flex gap-4 list-unstyled m-0 p-0">
+          <li><a href="../index.html" class="text-white">INICIO</a></li>
+          <li><a href="pagina1.html" class="text-white">HISTORIA</a></li>
+          <li><a href="pagina2.html" class="text-white">DESCUBRIR</a></li>
+          <li><a href="pagina3.html" class="text-white">PLAYLISTS</a></li>
+        </ul>
+      </div>
+
+      <div class="d-flex flex-wrap justify-content-between align-items-center pt-3 text-white-50 small">
+        <div>&copy; 2026 Historia de la Música Argentina. Todos los derechos reservados.</div>
+        <div class="d-flex gap-3 fs-5">
+          <a href="#" class="text-white-50"><i class="bi bi-spotify"></i></a>
+          <a href="#" class="text-white-50"><i class="bi bi-youtube"></i></a>
+          <a href="#" class="text-white-50"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Todos los botones/enlaces de género (sidebar desktop + barra móvil fija)
+      const allGenreItems = document.querySelectorAll('.genre-sidebar-item');
+      const sections = Array.from(document.querySelectorAll('.history-genre-row'));
+      const headerHeight = 90; // Offset para dejar espacio a la barra superior sticky
+      let isProgrammaticScroll = false;
+      let scrollTimer = null;
+
+      function setActiveGenre(targetId) {
+        allGenreItems.forEach(i => {
+          const match = i.getAttribute('data-target') === targetId;
+          i.classList.toggle('active', match);
+        });
+      }
+
+      function scrollToGenre(targetId) {
+        const targetEl = document.getElementById(targetId);
+        if (!targetEl) return;
+
+        setActiveGenre(targetId);
+        isProgrammaticScroll = true;
+        clearTimeout(scrollTimer);
+
+        const targetY = targetEl.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+        window.scrollTo({
+          top: Math.max(0, targetY),
+          behavior: 'smooth'
+        });
+
+        scrollTimer = setTimeout(() => {
+          isProgrammaticScroll = false;
+        }, 800);
+      }
+
+      allGenreItems.forEach(item => {
+        item.addEventListener('click', (e) => {
+          e.preventDefault();
+          const targetId = item.getAttribute('data-target');
+          if (targetId) {
+            scrollToGenre(targetId);
+            if (window.history && window.history.pushState) {
+              window.history.pushState(null, null, '#' + targetId);
+            }
+          }
+        });
+      });
+
+      // Detección precisa de la sección activa al hacer scroll manual
+      function onScroll() {
+        if (isProgrammaticScroll) return;
+
+        const scrollY = window.pageYOffset || document.documentElement.scrollTop;
+        const windowHeight = window.innerHeight;
+        const docHeight = document.documentElement.scrollHeight;
+
+        // Si el usuario llega al final de la página, activar siempre la última sección (Urbano)
+        if (windowHeight + scrollY >= docHeight - 80) {
+          const lastSec = sections[sections.length - 1];
+          if (lastSec) setActiveGenre(lastSec.id);
+          return;
+        }
+
+        // Determinar qué sección está actualmente en la zona de lectura
+        let currentActiveId = sections[0]?.id;
+        for (let i = 0; i < sections.length; i++) {
+          const sec = sections[i];
+          const top = sec.getBoundingClientRect().top;
+          if (top <= headerHeight + 80) {
+            currentActiveId = sec.id;
+          } else {
+            break;
+          }
+        }
+
+        if (currentActiveId) {
+          setActiveGenre(currentActiveId);
+        }
+      }
+
+      window.addEventListener('scroll', onScroll, { passive: true });
+
+      // Soporte para URL con hash al cargar la página (ej. pagina1.html#genre-rock)
+      if (window.location.hash) {
+        const hashId = window.location.hash.replace('#', '');
+        if (document.getElementById(hashId)) {
+          setTimeout(() => {
+            scrollToGenre(hashId);
+          }, 150);
+        }
+      }
+    });
+  </script>
+
+  <!-- Buscador real (Spotify / Apple Music / Wikipedia) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <script src="../js/music-api.js"></script>
+  <script src="../js/search.js"></script>
+</body>
+
+</html>

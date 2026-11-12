@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Historia de la Música Argentina - Playlists</title>
+  <meta name="description"
+    content="Playlists y selecciones oficiales de Folklore, Tango, Rock Nacional, Cumbia y Urbano argentino.">
+
+  <!-- Favicon con el logo oficial -->
+  <link rel="icon" type="image/png" href="../imgs/logo.png">
+
+  <!-- Precarga de fuentes locales: evita el "parpadeo" de fuentes al cambiar de pestaña -->
+  <link rel="preload" href="../css/font/BebasNeue-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="../css/font/ClashDisplay-Bold.otf" as="font" type="font/otf" crossorigin>
+  <link rel="preload" href="../css/font/LeagueSpartan-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+  <!-- ========================================================================
+       BARRA DE NAVEGACIÓN
+       ======================================================================== -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="../index.html" class="logo-box" aria-label="Ir al inicio" title="Historia de la Música Argentina">
+        <img src="../imgs/logo_white.png" alt="Logo Música Argentina" class="brand-logo-img">
+      </a>
+
+      <nav aria-label="Navegación principal">
+        <ul class="main-nav" id="main-nav-list">
+          <li><a href="../index.html" class="nav-link-item">INICIO</a></li>
+          <li><a href="pagina1.html" class="nav-link-item">HISTORIA</a></li>
+          <li><a href="pagina2.html" class="nav-link-item">DESCUBRIR</a></li>
+          <li><a href="pagina3.html" class="nav-link-item active" aria-current="page">PLAYLISTS</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-search-wrap">
+        <input type="text" class="header-search-input" placeholder="BUSCAR" aria-label="Buscar playlists">
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       CONTENIDO PRINCIPAL: PLAYLISTS (FIEL A LA MAQUETA 3)
+       ======================================================================== -->
+  <main class="playlists-page-wrapper">
+
+    <!-- BARRA HORIZONTAL DE PESTAÑAS DE GÉNEROS -->
+    <nav class="playlists-tabs-bar" aria-label="Pestañas de géneros musicales">
+      <button class="playlist-tab-btn genre-badge-rock" data-genre="folklore">
+        FOLKLORE
+      </button>
+      <button class="playlist-tab-btn genre-badge-tango" data-genre="tango">
+        tango
+      </button>
+      <button class="playlist-tab-btn genre-badge-rock" data-genre="rock">
+        rock
+      </button>
+      <button class="playlist-tab-btn genre-badge-cumbia" data-genre="cumbia">
+        cumbia
+      </button>
+      <!-- URBANO ACTIVO CON FONDO NARANJA SEGÚN MAQUETA -->
+      <button class="playlist-tab-btn genre-badge-urbano active" data-genre="urbano">
+        URBANO
+      </button>
+    </nav>
+
+    <!-- ENCABEZADO DE LA SECCIÓN DE GÉNERO (URBANO) -->
+    <section class="playlist-header-row" id="playlist-header-section">
+      <!-- Columna izquierda: Título y bajada con línea blanca -->
+      <div class="playlist-header-left">
+        <span class="playlist-category-subtitle">PLAYLISTS DE</span>
+        <h1 class="playlist-category-title" id="genre-title">URBANO</h1>
+        <p class="playlist-category-desc" id="genre-description">
+          El movimiento urbano se apodera del mainstream argentino, descubrí a las leyendas del trap, reggaeton, RKT y
+          dance.
+        </p>
+      </div>
+
+      <!-- Columna derecha: Banner de concierto duotono con logo "PL" -->
+      <div class="playlist-header-banner">
+        <img src="../imgs/tumbando el club playlist.png" alt="Banner de Playlists" id="genre-banner-img">
+      </div>
+    </section>
+
+    <!-- GRID 2x2 DE TARJETAS DE ARTISTAS (FIEL A LA MAQUETA 3) -->
+    <section class="playlist-cards-grid" id="playlist-grid">
+
+      <!-- TARJETA 1: DUKI -->
+      <article class="playlist-artist-card">
+        <div class="playlist-card-portrait">
+          <img src="../imgs/DukiPlaylist.png" alt="Retrato duotono de Duki">
+        </div>
+        <div class="playlist-card-content">
+          <h2 class="playlist-card-name">DUKI</h2>
+          <p class="playlist-card-bio">
+            La leyenda dentro del trap argentino. Atestigua su trayectoria desde sus comienzos hasta la actualidad.
+          </p>
+          <a href="https://open.spotify.com/playlist/37i9dQZF1DXe1ikyKZnRtc" class="playlist-card-link" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-spotify" style="color: #1DB954;"></i> This Is Duki
+          </a>
+        </div>
+      </article>
+
+      <!-- TARJETA 2: LA JOAQUI -->
+      <article class="playlist-artist-card">
+        <div class="playlist-card-portrait">
+          <img src="../imgs/LaJoaqui.png" alt="Retrato duotono de La Joaqui">
+        </div>
+        <div class="playlist-card-content">
+          <h2 class="playlist-card-name">LA JOAQUI</h2>
+          <p class="playlist-card-bio">
+            Revolucionando el RKT logra posicionarse como una de las figuras más importantes de su género.
+          </p>
+          <a href="https://open.spotify.com/search/This%20Is%20La%20Joaqui/playlists" class="playlist-card-link" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-spotify" style="color: #1DB954;"></i> This Is La Joaqui
+          </a>
+        </div>
+      </article>
+
+      <!-- TARJETA 3: BIZARRAP -->
+      <article class="playlist-artist-card">
+        <div class="playlist-card-portrait">
+          <img src="../imgs/Bizarrap.png" alt="Retrato duotono de Bizarrap">
+        </div>
+        <div class="playlist-card-content">
+          <h2 class="playlist-card-name">BIZARRAP</h2>
+          <p class="playlist-card-bio">
+            Logró cambiar cómo se ve el productor en la industria con sus Music Sessions. Descubrí sus mejores éxitos.
+          </p>
+          <a href="https://open.spotify.com/playlist/37i9dQZF1DZ06evO49kXpe" class="playlist-card-link" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-spotify" style="color: #1DB954;"></i> This Is Bizarrap
+          </a>
+        </div>
+      </article>
+
+      <!-- TARJETA 4: MILO J -->
+      <article class="playlist-artist-card">
+        <div class="playlist-card-portrait">
+          <img src="../imgs/MiloJ.png" alt="Retrato duotono de Milo J">
+        </div>
+        <div class="playlist-card-content">
+          <h2 class="playlist-card-name">MILO J</h2>
+          <p class="playlist-card-bio">
+            Con su estilo nostálgico y versátil, conquistó la escena con éxitos globales a temprana edad.
+          </p>
+          <a href="https://open.spotify.com/playlist/37i9dQZF1DZ06evO0CFC9z" class="playlist-card-link" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-spotify" style="color: #1DB954;"></i> This Is Milo J
+          </a>
+        </div>
+      </article>
+
+    </section>
+
+  </main>
+
+  <!-- ========================================================================
+       BARRA FIJA DE GÉNEROS MOBILE (arriba de la botonera inferior)
+       ======================================================================== -->
+  <nav class="mobile-playlists-genre-bar" aria-label="Pestañas de géneros de playlist">
+    <button class="mob-genre-btn genre-badge-folklore" data-genre="folklore">Folklore</button>
+    <button class="mob-genre-btn genre-badge-tango" data-genre="tango">Tango</button>
+    <button class="mob-genre-btn genre-badge-rock" data-genre="rock">Rock</button>
+    <button class="mob-genre-btn genre-badge-cumbia" data-genre="cumbia">Cumbia</button>
+    <button class="mob-genre-btn genre-badge-urbano active" data-genre="urbano">Urbano</button>
+  </nav>
+
+  <!-- ========================================================================
+       BOTTOM NAV BAR FIJA (solo mobile)
+       ======================================================================== -->
+  <nav class="mobile-bottom-nav" aria-label="Navegación móvil">
+    <a href="../index.html" id="mob-inicio" aria-label="Inicio">
+      <i class="bi bi-house-fill"></i>
+      <span>Inicio</span>
+    </a>
+    <a href="pagina1.html" id="mob-historia" aria-label="Historia">
+      <i class="bi bi-book"></i>
+      <span>Historia</span>
+    </a>
+    <a href="pagina2.html" id="mob-descubrir" aria-label="Descubrir">
+      <i class="bi bi-compass"></i>
+      <span>Descubrir</span>
+    </a>
+    <a href="pagina3.html" class="active" id="mob-playlists" aria-label="Playlists">
+      <i class="bi bi-collection-play"></i>
+      <span>Playlists</span>
+    </a>
+    <button type="button" class="mob-search-btn" id="mob-search" aria-label="Buscar artistas">
+      <i class="bi bi-search"></i>
+      <span>Buscar</span>
+    </button>
+  </nav>
+
+  <footer class="site-footer">
+    <div class="container-custom">
+      <div
+        class="d-flex flex-wrap justify-content-between align-items-center pb-4 border-bottom border-secondary border-opacity-25 gap-3">
+        <div class="d-flex align-items-center gap-3">
+          <div class="logo-box" style="width: 44px; height: 38px; padding: 5px;">
+            <img src="../imgs/logo_white.png" alt="Logo Música Argentina" class="brand-logo-img"
+              style="max-height: 28px;">
+          </div>
+          <div>
+            <h4 class="m-0 text-white" style="font-size: 1.5rem;">MÚSICA ARGENTINA</h4>
+            <small class="text-white-50">Historia, cultura y diversidad sonora</small>
+          </div>
+        </div>
+
+        <ul class="d-flex gap-4 list-unstyled m-0 p-0">
+          <li><a href="../index.html" class="text-white">INICIO</a></li>
+          <li><a href="pagina1.html" class="text-white">HISTORIA</a></li>
+          <li><a href="pagina2.html" class="text-white">DESCUBRIR</a></li>
+          <li><a href="pagina3.html" class="text-white">PLAYLISTS</a></li>
+        </ul>
+      </div>
+
+      <div class="d-flex flex-wrap justify-content-between align-items-center pt-3 text-white-50 small">
+        <div>&copy; 2026 Historia de la Música Argentina. Todos los derechos reservados.</div>
+        <div class="d-flex gap-3 fs-5">
+          <a href="#" class="text-white-50"><i class="bi bi-spotify"></i></a>
+          <a href="#" class="text-white-50"><i class="bi bi-youtube"></i></a>
+          <a href="#" class="text-white-50"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal reproductor interactivo -->
+  <div class="modal fade" id="playlistModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content"
+        style="background-color: var(--color-azul-card); color: #fff; border: 1px solid var(--color-naranja);">
+        <div class="modal-header border-bottom border-secondary">
+          <h5 class="modal-title font-monospace d-flex align-items-center gap-2" id="modalArtistTitle">
+            <img src="../imgs/logo.png" alt="" style="height: 22px; width: auto;">
+            <span>Playlist</span>
+          </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <p class="small text-white-50">Temas destacados:</p>
+          <p class="fw-bold fs-5 text-warning" id="modalTracksList"></p>
+          <div class="d-flex align-items-center gap-2 mt-4 text-white-50 small">
+            <i class="bi bi-music-player"></i> Reproducción simulada lista para escuchar.
+          </div>
+        </div>
+        <div class="modal-footer border-top border-secondary">
+          <button type="button" class="btn btn-warning text-dark fw-bold" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Base de datos de géneros para las pestañas
+      const genreData = {
+        urbano: {
+          title: "URBANO",
+          desc: "El movimiento urbano se apodera del mainstream argentino, descubrí a las leyendas del trap, reggaeton, RKT y dance.",
+          banner: "../imgs/TrapBanner.png",
+          artists: [
+            { name: "DUKI", bio: "La leyenda dentro del trap argentino. Atestigua su trayectoria desde sus comienzos hasta la actualidad.", img: "../imgs/DukiPlaylist.png", tracks: "Goteo, She Don't Give a FO, Givenchy", thisIs: "This Is Duki", playlist: "https://open.spotify.com/playlist/37i9dQZF1DXe1ikyKZnRtc" },
+            { name: "LA JOAQUI", bio: "Revolucionando el RKT logra posicionarse como una de las figuras más importantes de su género.", img: "../imgs/LaJoaqui.png", tracks: "Butakera, Dos Besitos, Muñecas", thisIs: "This Is La Joaqui", playlist: "https://open.spotify.com/search/This%20Is%20La%20Joaqui/playlists" },
+            { name: "BIZARRAP", bio: "Logró cambiar cómo se ve el productor en la industria con sus Music Sessions. Descubrí sus mejores éxitos.", img: "../imgs/Bizarrap.png", tracks: "BZRP Music Sessions #52, #53, #36", thisIs: "This Is Bizarrap", playlist: "https://open.spotify.com/playlist/37i9dQZF1DZ06evO49kXpe" },
+            { name: "MILO J", bio: "Con su estilo nostálgico y versátil, conquistó la escena con éxitos globales a temprana edad.", img: "../imgs/MiloJ.png", tracks: "Rara Vez, 111, Fruto, Alumbre", thisIs: "This Is Milo J", playlist: "https://open.spotify.com/playlist/37i9dQZF1DZ06evO0CFC9z" }
+          ]
+        },
+        folklore: {
+          title: "FOLKLORE",
+          desc: "Zambas, chacareras y chamamés que celebran la tierra, los caminos y la identidad popular.",
+          banner: "../imgs/FolkloreBanner.png",
+          artists: [
+            { name: "MERCEDES SOSA", bio: "La voz de América Latina. Símbolo del cancionero popular y la emoción colectiva.", img: "../imgs/MercedesSosa.png", tracks: "Gracias a la vida, Alfonsina y el mar, Solo le pido a Dios", thisIs: "This Is Mercedes Sosa", playlist: "https://open.spotify.com/playlist/37i9dQZF1DZ06evO01e1s9" },
+            { name: "ATAHUALPA YUPANQUI", bio: "El patriarca de la guitarra y la poesía criolla de los caminos y montes.", img: "../imgs/AtahualpaYupanqui.png", tracks: "Los ejes de mi carreta, El arriero, Luna tucumana", thisIs: "This Is Atahualpa Yupanqui", playlist: "https://open.spotify.com/search/This%20Is%20Atahualpa%20Yupanqui/playlists" },
+            { name: "LOS CHALCHALEROS", bio: "El cuarteto salteño que marcó la época de oro del folklore tradicional.", img: "../imgs/LosChalchaleros.png", tracks: "Zamba de mi esperanza, La lópez pereyra", thisIs: "This Is Los Chalchaleros", playlist: "https://open.spotify.com/search/This%20Is%20Los%20Chalchaleros/playlists" },
+            { name: "HORACIO GUARANY", bio: "Fuerza telúrica, coplas de vino y festivales multitudinarios de Cosquín.", img: "../imgs/HoracioGuarany.png", tracks: "Si se calla el cantor, Caballo que no galopa", thisIs: "This Is Horacio Guarany", playlist: "https://open.spotify.com/search/This%20Is%20Horacio%20Guarany/playlists" }
+          ]
+        },
+        tango: {
+          title: "TANGO",
+          desc: "Pasión arrabalera, bandoneón y poesía nocturna nacida a orillas del Río de la Plata.",
+          banner: "../imgs/TangoBanner.png",
+          artists: [
+            { name: "CARLOS GARDEL", bio: "El Zorzal Criollo. La voz inmortal que llevó el tango a las pantallas del mundo.", img: "../imgs/Gardel.png", tracks: "Mi noche triste, Por una cabeza, Volver, El día que me quieras", thisIs: "This Is Carlos Gardel", playlist: "https://open.spotify.com/search/This%20Is%20Carlos%20Gardel/playlists" },
+            { name: "ÁSTOR PIAZZOLLA", bio: "Revolucionario que fusionó el tango con el jazz y la música clásica contemporánea.", img: "../imgs/Piazzolla.png", tracks: "Adiós Nonino, Libertango, Balada para un loco", thisIs: "This Is Ástor Piazzolla", playlist: "https://open.spotify.com/search/This%20Is%20Astor%20Piazzolla/playlists" },
+            { name: "ANÍBAL TROILO", bio: "El 'Bandoneón Mayor de Buenos Aires', director de orquesta y alma de la noche porteña.", img: "../imgs/Troilo.png", tracks: "Sur, Barrio de tango, Responso", thisIs: "This Is Aníbal Troilo", playlist: "https://open.spotify.com/search/This%20Is%20Anibal%20Troilo/playlists" },
+            { name: "ROBERTO GOYENECHE", bio: "El Polaco. Maestro del fraseo y el decir íntimo del tango moderno.", img: "../imgs/RobertoGoyeneche.png", tracks: "Cafetín de Buenos Aires, Balada para un loco", thisIs: "This Is Roberto Goyeneche", playlist: "https://open.spotify.com/search/This%20Is%20Roberto%20Goyeneche/playlists" }
+          ]
+        },
+        rock: {
+          title: "ROCK NACIONAL",
+          desc: "La resistencia, la lírica contestataria y las melodías que forjaron la identidad de generaciones.",
+          banner: "../imgs/rendondos.png",
+          artists: [
+            { name: "CHARLY GARCÍA", bio: "Genio y figura del rock en español. De Sui Generis y Serú Girán a su etapa solista cumbre.", img: "../imgs/CharlyGarcia.png", tracks: "Demoliendo hoteles, Rezo por vos, Yendo de la cama al living", thisIs: "This Is Charly García", playlist: "https://open.spotify.com/search/This%20Is%20Charly%20Garcia/playlists" },
+            { name: "LUIS A. SPINETTA", bio: "El poeta fundamental. Líder de Almendra, Pescado Rabioso e Invisible.", img: "../imgs/Spinetta.png", tracks: "Muchacha ojos de papel, Cantata de puentes amarillos, Bajan", thisIs: "This Is Luis Alberto Spinetta", playlist: "https://open.spotify.com/search/This%20Is%20Luis%20Alberto%20Spinetta/playlists" },
+            { name: "Indio Solari", bio: "Mística ricotera y autogestión independiente con el pogo más grande del mundo.", img: "../imgs/IndioSolari.png", tracks: "Ji ji ji, Todo un palo, Juguetes perdidos, La bestia pop", thisIs: "This Is Indio Solari", playlist: "https://open.spotify.com/search/This%20Is%20Indio%20Solari/playlists" },
+            { name: "SODA STEREO", bio: "El trío liderado por Gustavo Cerati que conquistó y transformó el rock de América Latina.", img: "../imgs/SodaStereo.png", tracks: "De música ligera, En la ciudad de la furia, Persiana americana", thisIs: "This Is Soda Stereo", playlist: "https://open.spotify.com/search/This%20Is%20Soda%20Stereo/playlists" }
+          ]
+        },
+        cumbia: {
+          title: "CUMBIA",
+          desc: "El pulso bailable de las fiestas, los barrios populares y las pistas de todo el país.",
+          banner: "../imgs/los palmeras playlist.png",
+          height: "300px",
+          width: "800px",
+          artists: [
+            { name: "DAMAS GRATIS", bio: "Pablo Lescano y el nacimiento de la cumbia villera como fenómeno cultural masivo.", img: "../imgs/DamasGratis.png", tracks: "Se te ve la tanga, Los dueños del pabellón, Laura", thisIs: "This Is Damas Gratis", playlist: "https://open.spotify.com/search/This%20Is%20Damas%20Gratis/playlists" },
+            { name: "LOS PALMERAS", bio: "La leyenda viva de la cumbia santafesina con acordeón inconfundible.", img: "../imgs/LosPalmeras.png", tracks: "El bombón asesino, Olvídala, Soy sabalero", thisIs: "This Is Los Palmeras", playlist: "https://open.spotify.com/search/This%20Is%20Los%20Palmeras/playlists" },
+            { name: "GILDA", bio: "Santa popular de la cumbia tropical. Su voz y alegría continúan vivas en la memoria.", img: "../imgs/Gilda.png", tracks: "No me arrepiento de este amor, Fuiste, Paisaje", thisIs: "This Is Gilda", playlist: "https://open.spotify.com/search/This%20Is%20Gilda/playlists" },
+            { name: "L-GANTE", bio: "Creador de la Cumbia 420, fusionando cumbia villera, RKT y trap.", img: "../imgs/Lgante.png", tracks: "L-Gante RKT, Malianteo 420, Bar", thisIs: "This Is L-Gante", playlist: "https://open.spotify.com/search/This%20Is%20L-Gante/playlists" }
+          ]
+        }
+      };
+
+      const genreTitle = document.getElementById('genre-title');
+      const genreDesc = document.getElementById('genre-description');
+      const grid = document.getElementById('playlist-grid');
+      let currentGenre = 'urbano';
+
+      function selectGenre(genreKey) {
+        const data = genreData[genreKey];
+        if (!data) return;
+        currentGenre = genreKey;
+
+        // Sincronizar estado activo en todos los botones (desktop + mobile)
+        document.querySelectorAll('.playlist-tab-btn, .mob-genre-btn').forEach(btn => {
+          btn.classList.toggle('active', btn.getAttribute('data-genre') === genreKey);
+        });
+
+        // Actualizar textos de encabezado
+        if (genreTitle) genreTitle.textContent = data.title;
+        if (genreDesc) genreDesc.textContent = data.desc;
+
+        // Actualizar banner según el género
+        const bannerImg = document.getElementById('genre-banner-img');
+        if (bannerImg && data.banner) {
+          bannerImg.src = data.banner;
+          bannerImg.alt = `Banner de ${data.title}`;
+        }
+
+        // Renderizar nuevas cards para desktop
+        if (grid) {
+          grid.innerHTML = data.artists.map(art => `
+            <article class="playlist-artist-card">
+              <div class="playlist-card-portrait">
+                <img src="${art.img}" alt="Retrato de ${art.name}">
+              </div>
+              <div class="playlist-card-content">
+                <h2 class="playlist-card-name">${art.name}</h2>
+                <p class="playlist-card-bio">${art.bio}</p>
+                <a href="${art.playlist || `https://open.spotify.com/search/${encodeURIComponent(art.thisIs || `This Is ${art.name}`)}/playlists`}" class="playlist-card-link" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-spotify" style="color: #1DB954;"></i> ${art.thisIs || ('This Is ' + art.name)}
+                </a>
+              </div>
+            </article>
+          `).join('');
+        }
+
+        // Construir o actualizar carrusel móvil
+        buildMobileCarousel(data.artists);
+      }
+
+      // Event listeners para tabs desktop y barra móvil
+      document.querySelectorAll('.playlist-tab-btn, .mob-genre-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const genreKey = btn.getAttribute('data-genre');
+          selectGenre(genreKey);
+        });
+      });
+
+      /* ── Carrusel mobile para tarjetas de artistas ── */
+      let mobileCarouselIndex = 0; // se conserva entre reconstrucciones del resize
+      function buildMobileCarousel(artists, keepIndex = false) {
+        const oldWrap = document.getElementById('playlist-carousel-mob');
+        if (oldWrap) oldWrap.remove();
+
+        if (window.innerWidth > 768) return;
+        if (!artists || !artists.length || !grid) return;
+
+        const wrap = document.createElement('div');
+        wrap.className = 'mob-carousel-wrap';
+        wrap.id = 'playlist-carousel-mob';
+        wrap.style.padding = '0 10px';
+
+        const ctrack = document.createElement('div');
+        ctrack.className = 'mob-carousel-track';
+
+        artists.forEach(art => {
+          const slide = document.createElement('div');
+          slide.className = 'mob-carousel-slide';
+          slide.innerHTML = `
+            <article class="playlist-artist-card">
+              <div class="playlist-card-portrait">
+                <img src="${art.img}" alt="Retrato de ${art.name}">
+              </div>
+              <div class="playlist-card-content">
+                <h2 class="playlist-card-name">${art.name}</h2>
+                <p class="playlist-card-bio">${art.bio}</p>
+                <a href="${art.playlist || `https://open.spotify.com/search/${encodeURIComponent(art.thisIs || `This Is ${art.name}`)}/playlists`}" class="playlist-card-link" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-spotify" style="color: #1DB954;"></i> ${art.thisIs || ('This Is ' + art.name)}
+                </a>
+              </div>
+            </article>
+          `;
+          ctrack.appendChild(slide);
+        });
+        wrap.appendChild(ctrack);
+
+        const controls = document.createElement('div');
+        controls.className = 'mob-carousel-controls';
+        controls.innerHTML = `
+          <button class="mob-carousel-arrow" id="plc-prev" aria-label="Artista anterior">&#10094;</button>
+          <span class="mob-carousel-counter" id="plc-counter">1 / ${artists.length}</span>
+          <button class="mob-carousel-arrow" id="plc-next" aria-label="Artista siguiente">&#10095;</button>
+        `;
+        wrap.appendChild(controls);
+
+        const dotsBar = document.createElement('div');
+        dotsBar.className = 'mob-carousel-dots';
+        artists.forEach((_, i) => {
+          const d = document.createElement('button');
+          d.className = 'mob-carousel-dot' + (i === 0 ? ' active' : '');
+          d.setAttribute('aria-label', `Ir al artista ${i + 1}`);
+          dotsBar.appendChild(d);
+        });
+        wrap.appendChild(dotsBar);
+
+        // Insertar después del grid oculto
+        grid.parentNode.insertBefore(wrap, grid.nextSibling);
+
+        let pIdx = keepIndex ? mobileCarouselIndex : 0;
+        const pDots = wrap.querySelectorAll('.mob-carousel-dot');
+
+        function pGo(idx) {
+          pIdx = (idx + artists.length) % artists.length;
+          mobileCarouselIndex = pIdx;
+          ctrack.style.transform = `translateX(-${pIdx * 100}%)`;
+          const counterEl = wrap.querySelector('#plc-counter');
+          if (counterEl) counterEl.textContent = `${pIdx + 1} / ${artists.length}`;
+          pDots.forEach((d, i) => d.classList.toggle('active', i === pIdx));
+        }
+
+        wrap.querySelector('#plc-prev').addEventListener('click', () => pGo(pIdx - 1));
+        wrap.querySelector('#plc-next').addEventListener('click', () => pGo(pIdx + 1));
+        pDots.forEach((d, i) => d.addEventListener('click', () => pGo(i)));
+        if (pIdx > 0) pGo(pIdx);
+
+        // Soporte táctil de deslizamiento (swipe)
+        let touchStartX = 0;
+        wrap.addEventListener('touchstart', e => {
+          touchStartX = e.changedTouches[0].clientX;
+        }, { passive: true });
+
+        wrap.addEventListener('touchend', e => {
+          const diffX = e.changedTouches[0].clientX - touchStartX;
+          if (Math.abs(diffX) > 40) {
+            if (diffX < 0) pGo(pIdx + 1);
+            else pGo(pIdx - 1);
+          }
+        }, { passive: true });
+      }
+
+      // Inicializar carrusel en carga
+      buildMobileCarousel(genreData[currentGenre].artists);
+
+      // Reconstruir carrusel al redimensionar ventana: con debounce,
+      // solo al cruzar el breakpoint 768px y conservando la posición actual
+      // (el resize que dispara la barra de direcciones del móvil no debe resetear)
+      let plcLastIsMobile = window.innerWidth <= 768;
+      let plcTimer;
+      window.addEventListener('resize', () => {
+        clearTimeout(plcTimer);
+        plcTimer = setTimeout(() => {
+          const isMobile = window.innerWidth <= 768;
+          if (isMobile === plcLastIsMobile) return;
+          plcLastIsMobile = isMobile;
+          buildMobileCarousel(genreData[currentGenre].artists, true);
+        }, 150);
+      });
+    });
+
+    function openPlayerModal(artist, tracks) {
+      document.getElementById('modalArtistTitle').textContent = `Playlist de ${artist}`;
+      document.getElementById('modalTracksList').textContent = tracks;
+      const modal = new bootstrap.Modal(document.getElementById('playlistModal'));
+      modal.show();
+    }
+  </script>
+
+  <!-- Buscador real (Spotify / Apple Music / Wikipedia) -->
+  <script src="../js/music-api.js"></script>
+  <script src="../js/search.js"></script>
+</body>
+
+</html>

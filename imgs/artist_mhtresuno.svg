@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="trapGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b83210"/>
+      <stop offset="100%" stop-color="#691a08"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="450" fill="url(#trapGrad)"/>
+  
+  <g fill="#1a1c4b">
+    <!-- Silueta Hombros y Chaqueta -->
+    <path d="M 60 450 L 110 320 L 180 340 L 220 340 L 290 320 L 340 450 Z"/>
+    
+    <!-- Cuello y Rostro -->
+    <path d="M 170 340 L 170 270 Q 140 240 145 170 Q 155 100 200 95 Q 245 100 255 170 Q 260 240 230 270 L 230 340 Z" fill="#eb4d26"/>
+    
+    <!-- Pelo corte degradé urbano con flequillo prolijo -->
+    <path d="M 140 150 C 145 90, 180 70, 200 70 C 220 70, 255 90, 260 150 C 240 120, 220 125, 200 125 C 180 125, 160 120, 140 150 Z" fill="#141635"/>
+    
+    <!-- Rasgos faciales en duotono -->
+    <path d="M 165 175 Q 185 170 195 175 M 205 175 Q 215 170 235 175" stroke="#141635" stroke-width="4" fill="none"/>
+    <ellipse cx="180" cy="188" rx="6" ry="6" fill="#141635"/>
+    <ellipse cx="220" cy="188" rx="6" ry="6" fill="#141635"/>
+    <path d="M 198 185 L 202 218 L 194 224 H 206" stroke="#141635" stroke-width="3" fill="none"/>
+    <path d="M 185 242 Q 200 248 215 242" stroke="#141635" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <path d="M 110 320 L 200 370 L 290 320" stroke="#eb4d26" stroke-width="5" fill="none"/>
+  </g>
+</svg>

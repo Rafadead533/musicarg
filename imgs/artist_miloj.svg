@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="miloGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f24e1e"/>
+      <stop offset="100%" stop-color="#ab2d05"/>
+    </linearGradient>
+  </defs>
+  <rect width="350" height="400" fill="url(#miloGrad)"/>
+  
+  <g fill="#1a1c4b">
+    <path d="M 50 400 L 100 290 L 160 310 L 190 310 L 250 290 L 300 400 Z"/>
+    
+    <!-- Cuello y Rostro joven -->
+    <path d="M 140 290 L 140 220 Q 120 180 130 130 Q 140 80 175 75 Q 210 80 220 130 Q 225 180 210 220 L 210 290 Z" fill="#f24e1e"/>
+    
+    <!-- Gorra urbana tipo cap/piluso -->
+    <path d="M 120 120 C 120 60, 160 45, 175 45 C 205 45, 230 60, 230 120 Z" fill="#141635"/>
+    <path d="M 105 120 Q 175 105 245 120 Q 175 135 105 120 Z" fill="#141635"/>
+    
+    <!-- Mirada y cejas -->
+    <path d="M 140 148 Q 155 142 165 148 M 185 148 Q 195 142 210 148" stroke="#141635" stroke-width="3" fill="none"/>
+    <ellipse cx="155" cy="156" rx="5" ry="5" fill="#141635"/>
+    <ellipse cx="195" cy="156" rx="5" ry="5" fill="#141635"/>
+    
+    <path d="M 175 155 L 176 182 L 170 186 H 180" stroke="#141635" stroke-width="2.5" fill="none"/>
+    <path d="M 165 205 Q 175 210 185 205" stroke="#141635" stroke-width="3" stroke-linecap="round" fill="none"/>
+  </g>
+</svg>

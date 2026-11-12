@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="joaquiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f24e1e"/>
+      <stop offset="100%" stop-color="#bd350a"/>
+    </linearGradient>
+  </defs>
+  <rect width="350" height="400" fill="url(#joaquiGrad)"/>
+  
+  <g fill="#1a1c4b">
+    <!-- Pelo largo cayendo sobre los hombros -->
+    <path d="M 80 400 C 60 250, 70 120, 130 60 C 180 30, 240 40, 275 80 C 310 130, 310 260, 290 400 L 250 400 C 265 300, 270 200, 250 140 C 230 180, 230 260, 230 400 Z"/>
+    
+    <!-- Silueta rostro y cuello -->
+    <ellipse cx="185" cy="170" rx="42" ry="55" fill="#f24e1e"/>
+    
+    <!-- Flequillo recto urbano distintivo -->
+    <path d="M 140 120 Q 185 130 230 120 L 235 150 Q 185 158 135 150 Z" fill="#141635"/>
+    
+    <!-- Rasgos y maquillaje de ojos marcados -->
+    <path d="M 155 168 Q 170 160 180 166 M 195 166 Q 205 160 220 168" stroke="#141635" stroke-width="3" fill="none"/>
+    <ellipse cx="168" cy="175" rx="5" ry="4" fill="#141635"/>
+    <ellipse cx="206" cy="175" rx="5" ry="4" fill="#141635"/>
+    <!-- Delineado alargado -->
+    <path d="M 173 174 L 180 170 M 211 174 L 218 170" stroke="#141635" stroke-width="2"/>
+    
+    <!-- Labios voluptuosos -->
+    <path d="M 175 205 Q 188 200 200 205 Q 188 215 175 205 Z" fill="#141635"/>
+    
+    <!-- Top urbano / escote corset -->
+    <path d="M 120 400 L 150 290 Q 185 305 220 290 L 250 400 Z"/>
+  </g>
+</svg>
